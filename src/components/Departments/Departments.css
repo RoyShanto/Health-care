@@ -1,0 +1,23 @@
+.department-container{
+    padding-top:50px ;
+    padding-bottom:50px ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #c8cfd9;
+    grid-gap: 10px;
+    padding-left: 50px;
+}
+.cart-img{
+    height: 250;
+    width: 250;
+}
+.card{
+    width: 350px;
+    border: 2px solid goldenrod;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding:5px;
+}
+.card:hover{
+    background-color: goldenrod;
+}

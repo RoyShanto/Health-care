@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Neurology",
+        "img": "./image/departments/Neurology.jpg",
+        "shortDetail": "Neurology  is a branch of medicine dealing with disorders of the nervous system.",
+        "detail": "Neurology  is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems (and their subdivisions, the autonomic and somatic nervous systems), including their coverings, blood vessels, and all effector tissue, such as muscle.[1] Neurological practice relies heavily on the field of neuroscience, the scientific study of the nervous system."
+    },
+    {
+        "id": "2",
+        "name": "Cardiology",
+        "img": "./image/departments/cardiology.jpg",
+        "shortDetail": "Cardiology is concerned with the normal functionality of the heart and the deviation from a healthy heart.",
+        "detail": "Cardiology is concerned with the normal functionality of the heart and the deviation from a healthy heart. Many disorders involve the heart itself but some are outside of the heart and in the vascular system. Collectively, the two together are termed the cardiovascular system and diseases of one part tend to affect the other."
+    },
+    {
+        "id": "3",
+        "name": "Prostheses",
+        "img": "./image/departments/prostheses.jpg",
+        "shortDetail": "A person's prosthesis should be designed and assembled according to the person's appearance and functional needs.",
+        "detail": "A person's prosthesis should be designed and assembled according to the person's appearance and functional needs. For instance, a person may need a transradial prosthesis, but the person need to choose between an aesthetic functional device, a myoelectric device, a body-powered device, or an activity specific device. The person's future goals and economical capabilities may help them choose between one or more devices."
+    },
+    {
+        "id": "4",
+        "name": "Orthopedics",
+        "img": "./image/departments/Orthopedics.jpg",
+        "shortDetail": "Orthopaedic surgery or orthopaedics, is the branch of surgery concerned with conditions involving the musculoskeletal system.",
+        "detail": "Orthopaedic surgery or orthopaedics, is the branch of surgery concerned with conditions involving the musculoskeletal system. Orthopaedic surgeons use both surgical and nonsurgical means to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections, tumors, and congenital disorders."
+    },
+    {
+        "id": "5",
+        "name": "Dental",
+        "img": "./image/departments/dental.jpg",
+        "shortDetail": "Services at the center are available to everyone!",
+        "detail": "Services at the center are available to everyone! Dental care is important for individuals of all ages and backgrounds. Currently we specialize in adult services. Our facility is handicap accessible and we strive to provide care to all members of our community."
+    },
+    {
+        "id": "6",
+        "name": "Pregnancy",
+        "img": "./image/departments/pregnancy.jpg",
+        "shortDetail": "Getting good care before, during, and after your pregnancy is very important.",
+        "detail": "Getting good care before, during, and after your pregnancy is very important. It can help your baby grow and develop and keep you both healthy. It is the best way to be sure your little one gets a head start on a healthy life. PRENATAL CARE. Good prenatal care includes good nutrition and health habits before and during pregnancy"
+    }
+]
