@@ -12,8 +12,8 @@ const Slider = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>We are always ready to service</h3>
-                        <p>We provide 24 hours service. We have several branches. You can easily contact any specialized doctor.</p>
+                        <h3 className="text-dark">We are always ready to service</h3>
+                        <p className="text-dark ">We provide 24 hours service. We have several branches. You can easily contact any specialized doctor.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -24,8 +24,8 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Easily contact any doctor</h3>
-                        <p>We provide 24 hours service. We have several branches. You can easily contact any specialized doctor.</p>
+                        <h3 className="text-dark">Easily contact any doctor</h3>
+                        <p className="text-dark ">We provide 24 hours service. We have several branches. You can easily contact any specialized doctor.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -36,8 +36,8 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Research in various critical fields</h3>
-                        <p>We provide 24 hours service. We have several branches. You can easily contact any specialized doctor.</p>
+                        <h3 className="text-dark">Research in various critical fields</h3>
+                        <p className="text-dark">We provide 24 hours service. We have several branches. You can easily contact any specialized doctor.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

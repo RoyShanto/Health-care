@@ -13,6 +13,8 @@ import Login from './components/Login/Login/Login';
 import Footer from './components/Shared/Footer/Footer';
 import Departments from './components/Departments/Departments';
 import Details from './components/Details/Details';
+import ContactUs from './components/ContactUs/ContactUs';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -24,9 +26,11 @@ function App() {
             <Route exact path="/"> <Home /> </Route>
             <Route path="/home"> <Home /> </Route>
             <Route path="/departments"> <Departments /> </Route>
-            <PrivateRoute path="/aboutus"> <AboutUs /> </PrivateRoute>
+            <Route path="/aboutus"> <AboutUs /> </Route>
+            <Route path="/contactus"> <ContactUs /> </Route>
             <Route path="/login"> <Login /> </Route>
             <PrivateRoute path="/details/:departmentId"> <Details /> </PrivateRoute>
+            <Route path="*"> <NotFound /> </Route>
           </Switch>
           <Footer />
         </Router>

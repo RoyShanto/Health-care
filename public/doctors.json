@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Sam Johnson",
+        "img": "./image/doctor1.png",
+        "detail": "Lorem ipsum dolor sit ametco nsect etur adipisicing elit, sed do eiusmodte mpor incididunt ut labore et dolore magna aliqua ut enim."
+    },
+    {
+        "id": "2",
+        "name": "Krishan Roy",
+        "img": "./image/doctor2.png",
+        "detail": "Lorem ipsum dolor sit ametco nsect etur adipisicing elit, sed do eiusmodte mpor incididunt ut labore et dolore magna aliqua ut enim."
+    },
+    {
+        "id": "3",
+        "name": "Shanto Roy",
+        "img": "./image/doctor3.png",
+        "detail": "Lorem ipsum dolor sit ametco nsect etur adipisicing elit, sed do eiusmodte mpor incididunt ut labore et dolore magna aliqua ut enim."
+    }
+]

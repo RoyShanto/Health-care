@@ -32,7 +32,7 @@ const Login = () => {
     }
 
     return (
-        <div className="login-form">
+        <div className="login-form my-5 pt-5">
             <div>
                 <h2>Please {!isLogin ? 'Login' : 'Register'}</h2>
                 <form onSubmit={handleRegistration}>

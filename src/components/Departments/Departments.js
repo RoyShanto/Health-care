@@ -9,12 +9,14 @@ const Departments = () => {
             .then(data => setDepartments(data))
     }, [])
     return (
-        <div>
+        <div className="mt-5"><br />
             <h2>All Departments</h2>
-            <div className="department-container row">
-                {
-                    departments.map(d => <Department key={d.id} department={d} />)
-                }
+            <div className="container">
+                <div className="row my-5">
+                    {
+                        departments.map(d => <Department key={d.id} department={d} />)
+                    }
+                </div>
             </div>
         </div>
     );

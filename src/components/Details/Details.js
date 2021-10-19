@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card } from 'react-bootstrap';
 import { useParams } from 'react-router';
-import './Details.css'
 
 const Details = () => {
     const [departments, setDepartments] = useState([]);
@@ -16,13 +14,17 @@ const Details = () => {
     // console.log(data?.img);
     const imgg = `${'./.'}${data?.img}`;
     return (
-        <div className="container details">
-            <div>
-                <img src={imgg} alt="" />
-            </div>
-            <div className="text">
-                <h2>{data?.name}</h2>
-                <p>Description: {data?.detail}</p>
+        <div className="container py-5">
+            <div className="row p-2 border border-danger" >
+                <div className="col-md-6">
+                    <img className="img-fluid" src={imgg} alt="" />
+                </div>
+                <div className="col-md-6">
+                    <div className="pt-5 mt-5">
+                        <h2>{data?.name}</h2>
+                        <p>Description: {data?.detail}</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
