@@ -6,7 +6,10 @@ import { useHistory } from "react-router-dom";
 initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
+    const [error, setError] = useState('');
     let history = useHistory();
+    let isLogin = false;
+
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider()
@@ -23,11 +26,12 @@ const useFirebase = () => {
     const logOut = () => {
         signOut(auth)
             .then(() => {
+                isLogin = false;
                 setUser({});
                 history.push('/login');
             })
             .catch((error) => {
-                console.log(error.message)
+                // console.log(error.message)
             });
     }
     const registerWithEmailPassword = (name, email, password) => {
@@ -37,7 +41,7 @@ const useFirebase = () => {
                 setUserName(name);
             })
             .catch((error) => {
-                console.log(error.message);
+                // console.log(error.message);
             });
     }
     const setUserName = (name) => {
@@ -51,11 +55,14 @@ const useFirebase = () => {
     const loginWithEmailPassword = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
+                isLogin = true;
                 const user = result.user;
-                console.log(user);
+                console.log('store', user);
+                setError(' ');
                 history.push("/home");
             })
             .catch((error) => {
+                isLogin ? setError(' ') : setError('Something Wrong. Please Try Again');
             });
     }
 
@@ -67,7 +74,7 @@ const useFirebase = () => {
             }
         })
     }, [auth, history])
-    return { user, signInUsingGoogle, logOut, registerWithEmailPassword, loginWithEmailPassword }
+    return { user, error, signInUsingGoogle, logOut, registerWithEmailPassword, loginWithEmailPassword }
 
 }
 export default useFirebase;

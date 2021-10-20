@@ -43,7 +43,8 @@ const Login = () => {
                         {isLogin && <div><input type="text" name="name" placeholder="Enter Your Name" onBlur={handleNameChange} required /><br /></div>}
                         <input className="mb-2" type="email" name="email" placeholder="Enter Your Email" onBlur={handleEmailChange} required /><br />
                         <input type="password" name="password" placeholder="Enter Your Password" onBlur={handlePasswordChange} required /><br />
-                        {passError}{error}<br />
+                        <p className="text-danger">{passError}{error}</p><br />
+
                         <button type="submit" >{!isLogin ? 'Login' : 'Register'}</button><br />
                     </form>
                     <p className="text-success">Create a new account <input type="checkbox" onChange={toggoleLogin} /></p>
