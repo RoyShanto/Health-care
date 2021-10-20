@@ -10,7 +10,7 @@ const AboutUs = () => {
     }, []);
     return (
         <div className="my-5 container" ><br />
-            <h2 className="text-primary">Specialist Doctors</h2>
+            <h2 className="text-primary fw-bold fs-1">Specialist Doctors</h2>
             <div className="row my-5">
                 {
                     doctors.map(d => <Doctors key={d.id} doctor={d} />)

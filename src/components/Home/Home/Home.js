@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutUs from '../../AboutUs/AboutUs';
+import Covid from '../../Covid/Covid';
 import Departments from '../../Departments/Departments';
 import Slider from '../Slider/Slider';
 import './Home.css';
@@ -14,17 +15,17 @@ const Home = () => {
                     for healthcare and medical business.</p><br /><br />
                 <div className="feacher">
                     <div>
-                        <i class="far fa-clock"></i>
+                        <i className="far fa-clock"></i>
                         <p>Show visiting hours</p>
                         <h2>Timetable</h2>
                     </div>
                     <div>
-                        <i class="far fa-calendar-check"></i>
+                        <i className="far fa-calendar-check"></i>
                         <p>Make an appointment</p>
                         <h2>Online booking</h2>
                     </div>
                     <div>
-                        <i class="fas fa-exchange-alt"></i>
+                        <i className="fas fa-exchange-alt"></i>
                         <p>Showcase your work</p>
                         <h2>Before & After</h2>
                     </div>
@@ -39,7 +40,8 @@ const Home = () => {
                 <hr />
             </div>
             <Departments />
-        </div>
+            <Covid />
+        </div >
     );
 };
 

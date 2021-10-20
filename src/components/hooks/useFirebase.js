@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword } from "firebase/auth";
 import initializeAuthentication from '../../firebase/firebase.initialize';
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 
 initializeAuthentication();
 const useFirebase = () => {
@@ -14,23 +14,23 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 console.log(result.user);
+                history.push("/login");
             })
             .catch((error) => {
-                console.log(error.message);
+
             })
     }
     const logOut = () => {
         signOut(auth)
             .then(() => {
                 setUser({});
-                history.push('/login')
+                history.push('/login');
             })
             .catch((error) => {
                 console.log(error.message)
             });
     }
     const registerWithEmailPassword = (name, email, password) => {
-        // console.log('registration', name, email, password);
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 console.log(result.user);
@@ -49,15 +49,13 @@ const useFirebase = () => {
             });
     }
     const loginWithEmailPassword = (email, password) => {
-        // console.log('Login', email, password);
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 const user = result.user;
                 console.log(user);
-                // setError('');
+                history.push("/home");
             })
             .catch((error) => {
-                // setError(error.message);
             });
     }
 

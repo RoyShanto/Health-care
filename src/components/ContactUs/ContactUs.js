@@ -4,7 +4,7 @@ const ContactUs = () => {
     return (
         <div className="container">
             <h1>Contact</h1>
-            <p><i>Get a premium support now!</i></p><br /><br />
+            <p className="text-primary fw-bold"><i>Get a premium support now!</i></p><br /><br />
             <div className="contact-info">
                 <div>
                     <hr />

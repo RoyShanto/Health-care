@@ -10,7 +10,7 @@ const Departments = () => {
     }, [])
     return (
         <div className="mt-5"><br />
-            <h2>All Departments</h2>
+            <h2 className="text-primary fw-bold fs-1">All Departments</h2>
             <div className="container">
                 <div className="row my-5">
                     {

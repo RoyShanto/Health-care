@@ -11,13 +11,12 @@ const Details = () => {
             .then(data => setDepartments(data))
     }, [])
     const data = departments.find(d => d.id === departmentId)
-    // console.log(data?.img);
-    const imgg = `${'./.'}${data?.img}`;
+    const img = `${'./.'}${data?.img}`;
     return (
-        <div className="container py-5">
+        <div className="container py-5 mt-5">
             <div className="row p-2 border border-danger" >
                 <div className="col-md-6">
-                    <img className="img-fluid" src={imgg} alt="" />
+                    <img className="img-fluid" src={img} alt="" />
                 </div>
                 <div className="col-md-6">
                     <div className="pt-5 mt-5">

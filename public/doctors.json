@@ -1,20 +1,20 @@
 [
     {
         "id": "1",
-        "name": "Sam Johnson",
+        "name": "Dr. Sam Johnson",
         "img": "./image/doctor1.png",
-        "detail": "Lorem ipsum dolor sit ametco nsect etur adipisicing elit, sed do eiusmodte mpor incididunt ut labore et dolore magna aliqua ut enim."
+        "detail": "He is the special doctor of Neurology department. He completed MBBS in USA. Now he is working in Our Health Care."
     },
     {
         "id": "2",
-        "name": "Krishan Roy",
+        "name": "Dr. Krishan Roy",
         "img": "./image/doctor2.png",
-        "detail": "Lorem ipsum dolor sit ametco nsect etur adipisicing elit, sed do eiusmodte mpor incididunt ut labore et dolore magna aliqua ut enim."
+        "detail": "He is the special doctor of Cardiology department. He completed MBBS in USA. Now he is working in Our Health Care."
     },
     {
         "id": "3",
-        "name": "Shanto Roy",
+        "name": "Dr. Shanto Roy",
         "img": "./image/doctor3.png",
-        "detail": "Lorem ipsum dolor sit ametco nsect etur adipisicing elit, sed do eiusmodte mpor incididunt ut labore et dolore magna aliqua ut enim."
+        "detail": "He is the special doctor of Prostheses department. He completed MBBS in USA. Now he is working in Our Health Care."
     }
 ]

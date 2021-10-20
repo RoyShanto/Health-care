@@ -15,6 +15,7 @@ import Departments from './components/Departments/Departments';
 import Details from './components/Details/Details';
 import ContactUs from './components/ContactUs/ContactUs';
 import NotFound from './components/NotFound/NotFound';
+import Covid from './components/Covid/Covid';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/home"> <Home /> </Route>
             <Route path="/departments"> <Departments /> </Route>
             <Route path="/aboutus"> <AboutUs /> </Route>
+            <PrivateRoute path="/covid"> <Covid /> </PrivateRoute>
             <Route path="/contactus"> <ContactUs /> </Route>
             <Route path="/login"> <Login /> </Route>
             <PrivateRoute path="/details/:departmentId"> <Details /> </PrivateRoute>
